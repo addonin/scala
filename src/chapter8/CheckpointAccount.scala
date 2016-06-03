@@ -10,12 +10,12 @@ class CheckpointAccount extends Account {
 
   import CheckpointAccount._
 
-  override def deposit(amount: Int): Unit = {
+  override def deposit(amount: Double): Unit = {
     if (amount >= 1) super.deposit(amount - 1)
     else throw new RuntimeException(NOT_ENOUGH_TO_PAY_COMISSION)
   }
 
-  override def withdraw(amount: Int): Unit = {
+  override def withdraw(amount: Double): Unit = {
     if (balance - amount > 1) super.withdraw(amount + 1)
     else throw new RuntimeException(NOT_ENOUGH_TO_PAY_COMISSION)
   }

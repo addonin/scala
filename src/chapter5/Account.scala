@@ -5,14 +5,14 @@ package chapter5
   */
 class Account {
 
-  private var count: Int = 0
+  private var count: Double = 0
 
-  def deposit(amount: Int): Unit = {
+  def deposit(amount: Double): Unit = {
     count += amount
   }
 
-  def withdraw(amount: Int): Unit = {
-    if (count > amount) count -= amount else throw new RuntimeException("Not enough to withdraw")
+  def withdraw(amount: Double): Unit = {
+    if (count >= amount) count -= amount else throw new RuntimeException("Not enough to withdraw")
   }
 
   def balance = count
