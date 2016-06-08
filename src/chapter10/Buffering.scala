@@ -13,7 +13,7 @@ trait Buffering {
 }
 
 object Ex6 extends App {
-  val f = new FileInputStream("/Users/Dmytro_Adonin/Downloads/2000010.txt") with Buffering
+  val f = new FileInputStream("/Users/Dmytro_Adonin/Downloads/2000010.txt") with Buffering // with ConsoleLogger
   for(i <- 1 to 10) println(f.read.toChar)
 }
 
