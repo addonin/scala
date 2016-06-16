@@ -8,7 +8,7 @@ import org.junit.runners.Suite
   * @since 16/06/16.
   */
 @RunWith(classOf[Suite])
-@Suite.SuiteClasses(classOf[Test])
+@Suite.SuiteClasses(Array(classOf[Test]))
 class TestRunner
 
 class Test {

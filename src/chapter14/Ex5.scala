@@ -6,7 +6,7 @@ package chapter14
   */
 object Ex5 extends App {
 
-  def sumLeaf(list: List[Any]): Int = {
+  /*def sumLeaf(list: List[Any]): Int = {
     (for (elem <- list) yield elem match {
       case l: List[Int] => sumLeaf(l)
       case e: Int => e
@@ -14,6 +14,6 @@ object Ex5 extends App {
     }).sum
   }
 
-  println(sumLeaf(List(1, 2, List(3, 4))))
+  println(sumLeaf(List(1, 2, List(3, 4))))*/
 
 }
